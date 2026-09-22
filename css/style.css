@@ -512,7 +512,7 @@ textarea {
 .scroll-cue {
   position: absolute;
   left: 50%;
-  bottom: 28px;
+  bottom: 40px;
   transform: translateX(-50%);
   width: 26px;
   height: 42px;
