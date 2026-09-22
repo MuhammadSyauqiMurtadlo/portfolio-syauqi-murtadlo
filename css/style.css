@@ -73,7 +73,9 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+  transition:
+    background var(--dur) var(--ease),
+    color var(--dur) var(--ease);
   overflow-x: hidden;
 }
 
@@ -93,7 +95,10 @@ ul {
   padding: 0;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-mono);
   font-weight: 600;
   line-height: 1.2;
@@ -167,8 +172,11 @@ textarea {
   font-weight: 600;
   font-size: 0.95rem;
   border: 1px solid transparent;
-  transition: transform var(--dur) var(--ease), background var(--dur) var(--ease),
-    border-color var(--dur) var(--ease), color var(--dur) var(--ease);
+  transition:
+    transform var(--dur) var(--ease),
+    background var(--dur) var(--ease),
+    border-color var(--dur) var(--ease),
+    color var(--dur) var(--ease);
   white-space: nowrap;
 }
 
@@ -327,7 +335,9 @@ textarea {
   width: 20px;
   height: 2px;
   background: var(--text);
-  transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
+  transition:
+    transform var(--dur) var(--ease),
+    opacity var(--dur) var(--ease);
   margin-inline: auto;
 }
 
@@ -357,9 +367,19 @@ textarea {
 
 .hero__grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 56px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 460px);
+  gap: clamp(28px, 4vw, 56px);
   align-items: center;
+}
+
+.hero__content {
+  min-width: 0;
+}
+
+.hero__panel {
+  width: min(100%, 460px);
+  justify-self: end;
+  margin-left: auto;
 }
 
 .hero__prompt {
@@ -408,7 +428,9 @@ textarea {
 
 .hero__social a {
   color: var(--text-muted);
-  transition: color var(--dur) var(--ease), transform var(--dur) var(--ease);
+  transition:
+    color var(--dur) var(--ease),
+    transform var(--dur) var(--ease);
   display: inline-flex;
 }
 
@@ -418,6 +440,7 @@ textarea {
 }
 
 .code-window {
+  width: 100%;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -439,9 +462,15 @@ textarea {
   border-radius: 50%;
 }
 
-.dot--red { background: #ef6a5f; }
-.dot--yellow { background: #f4bf4f; }
-.dot--green { background: #61c454; }
+.dot--red {
+  background: #ef6a5f;
+}
+.dot--yellow {
+  background: #f4bf4f;
+}
+.dot--green {
+  background: #61c454;
+}
 
 .code-window__title {
   margin-left: 8px;
@@ -460,13 +489,25 @@ textarea {
   color: var(--text-muted);
 }
 
-.tok-key { color: #f2b84b; }
-.tok-var { color: #7db8ff; }
-.tok-str { color: #8fd19e; }
+.tok-key {
+  color: #f2b84b;
+}
+.tok-var {
+  color: #7db8ff;
+}
+.tok-str {
+  color: #8fd19e;
+}
 
-:root[data-theme="light"] .tok-key { color: #b9750c; }
-:root[data-theme="light"] .tok-var { color: #1a63c9; }
-:root[data-theme="light"] .tok-str { color: #1f8f4c; }
+:root[data-theme="light"] .tok-key {
+  color: #b9750c;
+}
+:root[data-theme="light"] .tok-var {
+  color: #1a63c9;
+}
+:root[data-theme="light"] .tok-str {
+  color: #1f8f4c;
+}
 
 .scroll-cue {
   position: absolute;
@@ -493,9 +534,18 @@ textarea {
 }
 
 @keyframes scrollCue {
-  0% { opacity: 1; top: 8px; }
-  70% { opacity: 0; top: 20px; }
-  100% { opacity: 0; top: 20px; }
+  0% {
+    opacity: 1;
+    top: 8px;
+  }
+  70% {
+    opacity: 0;
+    top: 20px;
+  }
+  100% {
+    opacity: 0;
+    top: 20px;
+  }
 }
 
 /* ==========================================================================
@@ -526,7 +576,9 @@ textarea {
 .reveal {
   opacity: 0;
   transform: translateY(18px);
-  transition: opacity 640ms var(--ease), transform 640ms var(--ease);
+  transition:
+    opacity 640ms var(--ease),
+    transform 640ms var(--ease);
 }
 
 .reveal.is-visible {
@@ -599,7 +651,9 @@ textarea {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
-  transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
+  transition:
+    border-color var(--dur) var(--ease),
+    transform var(--dur) var(--ease);
 }
 
 .skill-card:hover {
@@ -763,7 +817,9 @@ textarea {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  transition:
+    transform var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
   display: flex;
   flex-direction: column;
 }
@@ -855,7 +911,9 @@ textarea {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
-  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  transition:
+    transform var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
 }
 
 .org-card:hover {
@@ -900,7 +958,9 @@ textarea {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  transition:
+    transform var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
 }
 
 .cert-card:hover {
@@ -1125,7 +1185,9 @@ textarea {
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
-  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  transition:
+    opacity var(--dur) var(--ease),
+    transform var(--dur) var(--ease);
   z-index: 90;
 }
 
@@ -1221,6 +1283,16 @@ textarea {
 @media (max-width: 1024px) {
   .hero__grid {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero__content,
+  .hero__panel {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    justify-self: center;
+    margin-left: 0;
   }
 
   .hero__panel {
@@ -1252,7 +1324,10 @@ textarea {
     transform: translateY(-8px);
     opacity: 0;
     visibility: hidden;
-    transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility var(--dur);
+    transition:
+      opacity var(--dur) var(--ease),
+      transform var(--dur) var(--ease),
+      visibility var(--dur);
   }
 
   .navbar__nav.is-open {
