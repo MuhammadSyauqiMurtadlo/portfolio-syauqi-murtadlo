@@ -1295,8 +1295,12 @@ textarea {
     margin-left: 0;
   }
 
+  .hero__content {
+    order: 1;
+  }
+
   .hero__panel {
-    order: -1;
+    order: 2;
     max-width: 480px;
   }
 
