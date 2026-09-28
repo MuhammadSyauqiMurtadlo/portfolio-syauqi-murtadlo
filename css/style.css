@@ -949,13 +949,19 @@ textarea {
   object-fit: cover;
 }
 
+.cert-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 16px;
+}
+
 .cert-card__title {
   font-size: 0.98rem;
-  padding: 16px 16px 4px;
 }
 
 .cert-card__issuer {
-  padding: 0 16px 18px;
   color: var(--text-muted);
   font-size: 0.84rem;
 }
