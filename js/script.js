@@ -1,7 +1,7 @@
 /**
  * Portfolio interactions — vanilla JS, no dependencies.
  * Modules: theme, mobile nav, active-link tracking, scroll reveal,
- * project filter, project modal, back-to-top, contact form validation.
+ * project modal, back-to-top, contact form validation.
  */
 (() => {
   "use strict";
@@ -210,45 +210,6 @@
       );
 
       items.forEach((el) => observer.observe(el));
-    };
-
-    return { init };
-  })();
-
-  /* ------------------------------------------------------------------
-   * Project filtering
-   * ---------------------------------------------------------------- */
-  const ProjectFilter = (() => {
-    const buttons = document.querySelectorAll(".filter-btn");
-    const cards = document.querySelectorAll(".project-card");
-    const emptyState = document.getElementById("projects-empty");
-
-    const applyFilter = (filter) => {
-      let visibleCount = 0;
-
-      cards.forEach((card) => {
-        const matches = filter === "all" || card.dataset.category === filter;
-        card.classList.toggle("is-hidden", !matches);
-        if (matches) visibleCount += 1;
-      });
-
-      emptyState.hidden = visibleCount !== 0;
-    };
-
-    const init = () => {
-      if (buttons.length === 0) return;
-
-      buttons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          buttons.forEach((b) => {
-            b.classList.remove("is-active");
-            b.setAttribute("aria-selected", "false");
-          });
-          btn.classList.add("is-active");
-          btn.setAttribute("aria-selected", "true");
-          applyFilter(btn.dataset.filter);
-        });
-      });
     };
 
     return { init };
@@ -502,7 +463,6 @@
     MobileNav.init();
     ScrollNav.init();
     ScrollReveal.init();
-    ProjectFilter.init();
     ProjectModal.init();
     BackToTop.init();
     ContactForm.init();

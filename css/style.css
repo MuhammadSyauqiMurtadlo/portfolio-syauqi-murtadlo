@@ -779,33 +779,6 @@ textarea {
 /* ==========================================================================
    PROJECTS
    ========================================================================== */
-.filter-bar {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 36px;
-}
-
-.filter-btn {
-  padding: 9px 18px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  transition: all var(--dur) var(--ease);
-}
-
-.filter-btn:hover {
-  color: var(--text);
-  border-color: var(--accent);
-}
-
-.filter-btn.is-active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-on);
-}
-
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -822,10 +795,6 @@ textarea {
     border-color var(--dur) var(--ease);
   display: flex;
   flex-direction: column;
-}
-
-.project-card.is-hidden {
-  display: none;
 }
 
 .project-card:hover {
