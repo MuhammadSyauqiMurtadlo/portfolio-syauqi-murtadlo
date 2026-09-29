@@ -367,7 +367,7 @@ textarea {
 
 .hero__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 460px);
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 520px);
   gap: clamp(28px, 4vw, 56px);
   align-items: center;
 }
@@ -377,7 +377,7 @@ textarea {
 }
 
 .hero__panel {
-  width: min(100%, 460px);
+  width: min(100%, 520px);
   justify-self: end;
   margin-left: auto;
 }
