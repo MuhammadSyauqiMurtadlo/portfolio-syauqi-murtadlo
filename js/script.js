@@ -7,7 +7,7 @@
   "use strict";
 
   const prefersReducedMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)"
+    "(prefers-reduced-motion: reduce)",
   ).matches;
 
   /* ------------------------------------------------------------------
@@ -171,7 +171,7 @@
         {
           rootMargin: `-${navbar.offsetHeight + 20}px 0px -55% 0px`,
           threshold: 0,
-        }
+        },
       );
 
       sections.forEach((section) => observer.observe(section));
@@ -206,7 +206,7 @@
             }
           });
         },
-        { threshold: 0.15, rootMargin: "0px 0px -60px 0px" }
+        { threshold: 0.15, rootMargin: "0px 0px -60px 0px" },
       );
 
       items.forEach((el) => observer.observe(el));
@@ -222,24 +222,30 @@
     // Placeholder content per project — replace with your real project data.
     const projectData = {
       "project-1": {
-        title: "[PROJECT TITLE]",
-        description: "[FULL PROJECT DESCRIPTION]",
-        tags: ["[TECH]", "[TECH]", "[TECH]"],
-        github: "[GITHUB URL]",
+        title: "Automated WhatsApp Notification System for SLiMS",
+        description:
+          "Developed an automated WhatsApp notification system for SLiMS to streamline library notifications. The system supports scheduled notifications, customizable message templates, delivery logs, quota monitoring, and device status tracking.",
+        tags: ["PHP", "MySQL", "WhatsApp API"],
+        github:
+          "https://github.com/MuhammadSyauqiMurtadlo/slims-9.6.1-2025.git",
         demo: "[LIVE DEMO URL]",
       },
       "project-2": {
-        title: "[PROJECT TITLE]",
-        description: "[FULL PROJECT DESCRIPTION]",
-        tags: ["[TECH]", "[TECH]", "[TECH]"],
-        github: "[GITHUB URL]",
+        title: "Kemenag Hall Reservation System",
+        description:
+          "Developed a web-based hall reservation system during an internship at the Ministry of Religious Affairs of Jombang Regency. The system manages reservation requests, approval workflows, schedules, and hall usage history to support daily operational needs.",
+        tags: ["PHP Native", "MySQL", "Javascript"],
+        github:
+          "https://github.com/MuhammadSyauqiMurtadlo/aula-kemenag-jombang.git",
         demo: "[LIVE DEMO URL]",
       },
       "project-3": {
-        title: "[PROJECT TITLE]",
-        description: "[FULL PROJECT DESCRIPTION]",
-        tags: ["[TECH]", "[TECH]", "[TECH]"],
-        github: "[GITHUB URL]",
+        title: "SI-IMUT Performance Evaluation System",
+        description:
+          "Developing a web-based performance evaluation system using Laravel to support evaluation activities based on the Contextual Inquiry method. The system manages informants, tasks, observations, interview notes, findings, and evaluation results.",
+        tags: ["Laravel", "MySQL", "Bootstrap"],
+        github:
+          "https://github.com/MuhammadSyauqiMurtadlo/evaluasi-kinerja-siimut.git",
         demo: "[LIVE DEMO URL]",
       },
       "project-4": {
@@ -277,7 +283,7 @@
     const trapFocus = (event) => {
       if (event.key !== "Tab") return;
       const focusable = modal.querySelectorAll(
-        'button, a[href], input, textarea, [tabindex]:not([tabindex="-1"])'
+        'button, a[href], input, textarea, [tabindex]:not([tabindex="-1"])',
       );
       if (focusable.length === 0) return;
 
@@ -439,7 +445,8 @@
         // No backend is wired up yet — replace this with a real submission
         // (fetch to your API, a form service, mailto, etc.).
         status.style.removeProperty("color");
-        status.textContent = "Pesan siap dikirim. Hubungkan form ini ke layanan email/API Anda.";
+        status.textContent =
+          "Pesan siap dikirim. Hubungkan form ini ke layanan email/API Anda.";
         form.reset();
       });
     };
