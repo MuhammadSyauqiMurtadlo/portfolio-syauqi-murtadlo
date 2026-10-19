@@ -1,7 +1,7 @@
 /**
  * Portfolio interactions — vanilla JS, no dependencies.
  * Modules: theme, mobile nav, active-link tracking, scroll reveal,
- * project modal, back-to-top, contact form validation.
+ * project and certificate modals, back-to-top, contact form validation.
  */
 (() => {
   "use strict";
@@ -264,6 +264,70 @@
     let lastFocusedElement = null;
 
     const render = (id) => {
+      if (id === "all-certificates") {
+        const certificates = [
+          {
+            name: "[NAMA SERTIFIKAT 1]",
+            issuer: "[PENERBIT 1]",
+            year: "[TAHUN 1]",
+            image: "/img/sertifikat/[NAMA-FILE-GAMBAR-1].jpg",
+            url: "[URL SERTIFIKAT 1]",
+          },
+          {
+            name: "[NAMA SERTIFIKAT 2]",
+            issuer: "[PENERBIT 2]",
+            year: "[TAHUN 2]",
+            image: "/img/sertifikat/[NAMA-FILE-GAMBAR-2].jpg",
+            url: "[URL SERTIFIKAT 2]",
+          },
+          {
+            name: "[NAMA SERTIFIKAT 3]",
+            issuer: "[PENERBIT 3]",
+            year: "[TAHUN 3]",
+            image: "/img/sertifikat/[NAMA-FILE-GAMBAR-3].jpg",
+            url: "[URL SERTIFIKAT 3]",
+          },
+        ];
+
+        body.innerHTML = `
+  <h3 id="modal-title">All Certificates</h3>
+  <div class="cert__grid" id="additional-certificates-list">
+    ${certificates
+      .map(
+        (certificate) => `
+          <a
+            class="cert-card"
+            href="${certificate.url}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="cert-card__thumb">
+              <img
+                src="${certificate.image}"
+                alt="Sertifikat ${certificate.name}"
+                loading="lazy"
+                width="320"
+                height="220"
+              />
+            </div>
+            <div class="cert-card__body">
+              <h4 class="cert-card__title">${certificate.name}</h4>
+              <p class="cert-card__issuer">
+                ${certificate.issuer} · ${certificate.year}
+              </p>
+              <span class="btn btn--primary btn--sm cert-card__button">
+                View Certificate
+              </span>
+            </div>
+          </a>
+        `,
+      )
+      .join("")}
+  </div>
+`;
+        return;
+      }
+
       const data = projectData[id];
       if (!data) return;
 
