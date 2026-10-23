@@ -249,10 +249,12 @@
         demo: "[LIVE DEMO URL]",
       },
       "project-4": {
-        title: "[PROJECT TITLE]",
-        description: "[FULL PROJECT DESCRIPTION]",
-        tags: ["[TECH]", "[TECH]", "[TECH]"],
-        github: "[GITHUB URL]",
+        title: "AI Personal Finance Analyzer",
+        description:
+          "Developed an AI-powered personal finance analyzer using React JS and Laravel. The system analyzes users' financial data, provides insights, and offers recommendations for better financial management.",
+        tags: ["AI", "React JS", "Laravel"],
+        github:
+          "https://github.com/MuhammadSyauqiMurtadlo/ai-finance-analyzer-frontend.git",
         demo: "[LIVE DEMO URL]",
       },
     };
