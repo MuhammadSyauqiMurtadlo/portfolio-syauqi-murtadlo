@@ -257,6 +257,15 @@
           "https://github.com/MuhammadSyauqiMurtadlo/ai-finance-analyzer-frontend.git",
         demo: "[LIVE DEMO URL]",
       },
+      "project-5": {
+        title: "PMII Organizational Information System",
+        description:
+          "Developed a web-based organizational information system for PMII using Laravel. The system manages member data, organizational structure, event scheduling, and communication tools to enhance organizational efficiency.",
+        tags: ["Laravel", "MySQL", "Bootstrap"],
+        github:
+          "https://github.com/MuhammadSyauqiMurtadlo/pmii-organizational-information-system.git",
+        demo: "[LIVE DEMO URL]",
+      },
     };
 
     const overlay = document.getElementById("modal-overlay");
