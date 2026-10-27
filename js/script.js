@@ -278,25 +278,158 @@
       if (id === "all-certificates") {
         const certificates = [
           {
-            name: "[NAMA SERTIFIKAT 1]",
-            issuer: "[PENERBIT 1]",
-            year: "[TAHUN 1]",
-            image: "/img/sertifikat/[NAMA-FILE-GAMBAR-1].jpg",
-            url: "[URL SERTIFIKAT 1]",
+            name: "Algoritma dan Pemrograman Dasar",
+            issuer: "CodePolitan",
+            year: "2023",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-01.jpg",
+            url: "https://codepolitan.com/c/1ZMXJDL",
           },
           {
-            name: "[NAMA SERTIFIKAT 2]",
-            issuer: "[PENERBIT 2]",
-            year: "[TAHUN 2]",
-            image: "/img/sertifikat/[NAMA-FILE-GAMBAR-2].jpg",
-            url: "[URL SERTIFIKAT 2]",
+            name: "Belajar Bootstrap CSS Framework",
+            issuer: "CodePolitan",
+            year: "2023",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-02.jpg",
+            url: "https://codepolitan.com/c/V56VNWT",
           },
           {
-            name: "[NAMA SERTIFIKAT 3]",
-            issuer: "[PENERBIT 3]",
-            year: "[TAHUN 3]",
-            image: "/img/sertifikat/[NAMA-FILE-GAMBAR-3].jpg",
-            url: "[URL SERTIFIKAT 3]",
+            name: "Dasar CSS",
+            issuer: "CodePolitan",
+            year: "2023",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-03.jpg",
+            url: "https://codepolitan.com/c/QC6PEJZ",
+          },
+          {
+            name: "Belajar Dasar HTML",
+            issuer: "CodePolitan",
+            year: "2023",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-04.jpg",
+            url: "https://codepolitan.com/c/AE8DDGL",
+          },
+          {
+            name: "Belajar Node.js dan NPM",
+            issuer: "CodePolitan",
+            year: "2025",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-05.jpg",
+            url: "https://codepolitan.com/c/QHZ35VN",
+          },
+          {
+            name: "Framework Laravel Dasar",
+            issuer: "CodePolitan",
+            year: "2024",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-06.jpg",
+            url: "https://codepolitan.com/c/M8JCOMZ",
+          },
+          {
+            name: "Belajar GIT Lanjutan",
+            issuer: "CodePolitan",
+            year: "2023",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-07.jpg",
+            url: "https://codepolitan.com/c/LO5AVBN",
+          },
+          {
+            name: "Belajar Git Pemula",
+            issuer: "CodePolitan",
+            year: "2025",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-08.jpg",
+            url: "https://codepolitan.com/c/HKCE5AS",
+          },
+          {
+            name: "Belajar JavaScript",
+            issuer: "CodePolitan",
+            year: "2023",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-09.jpg",
+            url: "https://codepolitan.com/c/AO8HNRM",
+          },
+          {
+            name: "Belajar Konsep OOP di JavaScript",
+            issuer: "CodePolitan",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-10.jpg",
+            url: "https://codepolitan.com/c/GMCV1FH",
+          },
+          {
+            name: "Menggunakan Terminal atau CMD untuk Development",
+            issuer: "CodePolitan",
+            year: "2025",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-11.jpg",
+            url: "https://codepolitan.com/c/CLGDPYK",
+          },
+          {
+            name: "Pemrograman PHP",
+            issuer: "CodePolitan",
+            year: "2025",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-12.jpg",
+            url: "https://codepolitan.com/c/RCQKRLV",
+          },
+          {
+            name: "Mahir menggunakan Text Editor buat Pemula",
+            issuer: "CodePolitan",
+            year: "2023",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-13.jpg",
+            url: "https://codepolitan.com/c/VLDRCR3",
+          },
+          {
+            name: "Mengenal Pemrograman Komputer",
+            issuer: "CodePolitan",
+            year: "2023",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-14.jpg",
+            url: "https://codepolitan.com/c/HKNECKH",
+          },
+          {
+            name: "Belajar Dasar Pemrograman Web",
+            issuer: "Dicoding",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/dicoding-01.jpg",
+            url: "https://www.dicoding.com/certificates/QLZ99GL4MZ5D",
+          },
+          {
+            name: "Membuat Front-End Web untuk Pemula",
+            issuer: "Dicoding",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/dicoding-02.jpg",
+            url: "https://www.dicoding.com/certificates/53XE1R370ZRN",
+          },
+          {
+            name: "Penggunaan Generative AI",
+            issuer: "Dicoding",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/dicoding-03.jpg",
+            url: "https://www.dicoding.com/certificates/1OP8ROJ61ZQK",
+          },
+          {
+            name: "Webinar Series #131 - Agentic AI",
+            issuer: "Dunia Coding",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/dunia-coding.jpg",
+            url: "",
+          },
+          {
+            name: "IBM Granite Models for Software Development",
+            issuer: "IBM SkillsBuild",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/ibm-01.jpg",
+            url: "",
+          },
+          {
+            name: "Intelligent by Design: Build an AI Agent",
+            issuer: "IBM SkillsBuild",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/ibm-02.jpg",
+            url: "",
+          },
+          {
+            name: "Introduction to Large Language Models",
+            issuer: "IBM SkillsBuild",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/ibm-03.jpg",
+            url: "",
+          },
+          {
+            name: "Lab: Troubleshoot Your Code Using IBM Bob",
+            issuer: "IBM SkillsBuild",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/ibm-04.jpg",
+            url: "",
           },
         ];
 
@@ -304,14 +437,14 @@
   <h3 id="modal-title">All Certificates</h3>
   <div class="cert__grid" id="additional-certificates-list">
     ${certificates
-      .map(
-        (certificate) => `
-          <a
-            class="cert-card"
-            href="${certificate.url}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      .map((certificate) => {
+        const cardTag = certificate.url ? "a" : "article";
+        const linkAttributes = certificate.url
+          ? `href="${certificate.url}" target="_blank" rel="noopener noreferrer"`
+          : "";
+
+        return `
+          <${cardTag} class="cert-card" ${linkAttributes}>
             <div class="cert-card__thumb">
               <img
                 src="${certificate.image}"
@@ -326,13 +459,17 @@
               <p class="cert-card__issuer">
                 ${certificate.issuer} · ${certificate.year}
               </p>
-              <span class="btn btn--primary btn--sm cert-card__button">
+              ${
+                certificate.url
+                  ? `<span class="btn btn--primary btn--sm cert-card__button">
                 View Certificate
-              </span>
+              </span>`
+                  : ""
+              }
             </div>
-          </a>
-        `,
-      )
+          </${cardTag}>
+        `;
+      })
       .join("")}
   </div>
 `;
