@@ -35,12 +35,19 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+    <a class="skip-link" id="skip-link" href="#main-content"
+      >Lewati ke konten utama</a
+    >
 
     <!-- ============ NAVBAR ============ -->
     <header class="navbar" id="navbar">
       <div class="navbar__inner container">
-        <a href="#hero" class="navbar__brand" aria-label="Kembali ke beranda">
+        <a
+          href="#hero"
+          class="navbar__brand"
+          id="navbar-brand"
+          aria-label="Kembali ke beranda"
+        >
           <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
           <span class="brand-name">Syauqi</span>
         </a>
@@ -64,6 +71,16 @@
         </nav>
 
         <div class="navbar__actions">
+          <button
+            type="button"
+            class="language-toggle"
+            id="language-toggle"
+            aria-label="Ganti bahasa ke bahasa Inggris"
+            aria-pressed="false"
+            title="Ganti bahasa ke bahasa Inggris"
+          >
+            EN
+          </button>
           <button
             type="button"
             class="theme-toggle"
@@ -151,7 +168,11 @@
               >
             </div>
 
-            <ul class="hero__social" aria-label="Tautan sosial">
+            <ul
+              class="hero__social"
+              id="hero-social"
+              aria-label="Tautan sosial"
+            >
               <li>
                 <a
                   href="https://github.com/MuhammadSyauqiMurtadlo"
@@ -1332,6 +1353,7 @@ https://codepolitan.com/c/KQDOAVG"
       </div>
     </div>
 
+    <script src="js/i18n.js" defer></script>
     <script src="js/script.js" defer></script>
   </body>
 </html>

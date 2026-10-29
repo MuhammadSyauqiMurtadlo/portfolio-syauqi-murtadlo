@@ -473,6 +473,7 @@
       .join("")}
   </div>
 `;
+        window.PortfolioLanguage.translateSubtree(body);
         return;
       }
 
@@ -490,6 +491,7 @@
           <a class="btn btn--sm btn--ghost" href="${data.github}" target="_blank" rel="noopener noreferrer">Kode sumber</a>
         </div>
       `;
+      window.PortfolioLanguage.translateSubtree(body);
     };
 
     const trapFocus = (event) => {
@@ -591,7 +593,12 @@
         input: () => document.getElementById("name"),
         error: () => document.getElementById("name-error"),
         validate: (value) =>
-          value.trim().length >= 2 ? "" : "Nama minimal 2 karakter.",
+          value.trim().length >= 2
+            ? ""
+            : window.PortfolioLanguage.translateValue(
+                "Nama minimal 2 karakter.",
+                window.PortfolioLanguage.current,
+              ),
       },
       email: {
         input: () => document.getElementById("email"),
@@ -600,14 +607,22 @@
           const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           return pattern.test(value.trim())
             ? ""
-            : "Masukkan alamat email yang valid.";
+            : window.PortfolioLanguage.translateValue(
+                "Masukkan alamat email yang valid.",
+                window.PortfolioLanguage.current,
+              );
         },
       },
       message: {
         input: () => document.getElementById("message"),
         error: () => document.getElementById("message-error"),
         validate: (value) =>
-          value.trim().length >= 10 ? "" : "Pesan minimal 10 karakter.",
+          value.trim().length >= 10
+            ? ""
+            : window.PortfolioLanguage.translateValue(
+                "Pesan minimal 10 karakter.",
+                window.PortfolioLanguage.current,
+              ),
       },
     };
 
@@ -649,7 +664,10 @@
         const status = document.getElementById("form-status");
 
         if (!isValid) {
-          status.textContent = "Periksa kembali isian yang belum sesuai.";
+          status.textContent = window.PortfolioLanguage.translateValue(
+            "Periksa kembali isian yang belum sesuai.",
+            window.PortfolioLanguage.current,
+          );
           status.style.color = "#ef6a5f";
           return;
         }
@@ -657,8 +675,10 @@
         // No backend is wired up yet — replace this with a real submission
         // (fetch to your API, a form service, mailto, etc.).
         status.style.removeProperty("color");
-        status.textContent =
-          "Pesan siap dikirim. Hubungkan form ini ke layanan email/API Anda.";
+        status.textContent = window.PortfolioLanguage.translateValue(
+          "Pesan siap dikirim. Hubungkan form ini ke layanan email/API Anda.",
+          window.PortfolioLanguage.current,
+        );
         form.reset();
       });
     };
@@ -678,6 +698,7 @@
    * Init
    * ---------------------------------------------------------------- */
   document.addEventListener("DOMContentLoaded", () => {
+    window.PortfolioLanguage.init();
     Theme.init();
     MobileNav.init();
     ScrollNav.init();
