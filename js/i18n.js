@@ -361,7 +361,7 @@
       storedLanguage = null;
     }
 
-    apply(storedLanguage === "en" ? "en" : "id");
+    apply(storedLanguage === "id" ? "id" : "en");
     document.getElementById("language-toggle").addEventListener("click", () => {
       const nextLanguage = currentLanguage === "id" ? "en" : "id";
       apply(nextLanguage);
