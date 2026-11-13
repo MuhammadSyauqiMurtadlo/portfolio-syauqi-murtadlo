@@ -376,6 +376,13 @@
             url: "https://codepolitan.com/c/HKNECKH",
           },
           {
+            name: "Mengembangkan Sistem Streaming Seperti Netflix Menggunakan Laravel 11",
+            issuer: "CodePolitan",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/codepolitan-15.jpg",
+            url: "https://codepolitan.com/c/6QDB4XB",
+          },
+          {
             name: "Belajar Dasar Pemrograman Web",
             issuer: "Dicoding",
             year: "2026",
