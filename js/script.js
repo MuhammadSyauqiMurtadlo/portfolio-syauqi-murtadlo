@@ -278,6 +278,13 @@
       if (id === "all-certificates") {
         const certificates = [
           {
+            name: "Membangun MCP Server yang Aman untuk AI Agents",
+            issuer: "Exabytes Developer Club",
+            year: "2026",
+            image: "/img/sertifikat/all-sertifikat/exabytes-01.jpg",
+            url: "",
+          },
+          {
             name: "Algoritma dan Pemrograman Dasar",
             issuer: "CodePolitan",
             year: "2023",
